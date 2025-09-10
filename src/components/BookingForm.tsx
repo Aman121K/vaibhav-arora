@@ -59,7 +59,7 @@ ${formData.requirements || 'None mentioned'}
 _Sent from Vaibhav Arora Bhajan Website_`;
 
     const encodedMessage = encodeURIComponent(bookingDetails);
-    const whatsappNumber = "919876543210"; // Replace with actual WhatsApp number
+    const whatsappNumber = "919953193039"; // Vaibhav Arora's WhatsApp number
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
     try {

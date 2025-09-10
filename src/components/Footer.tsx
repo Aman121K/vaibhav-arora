@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   const handleWhatsAppContact = () => {
-    const whatsappNumber = "919876543210"; // Replace with actual WhatsApp number
+    const whatsappNumber = "919953193039"; // Vaibhav Arora's WhatsApp number
     const message = encodeURIComponent("Hello Vaibhav ji, I'm interested in your bhajan services. Please share more details.");
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
   };
@@ -64,7 +64,7 @@ const Footer = () => {
               <div className="space-y-4">
                 <div className="flex items-center justify-center md:justify-end opacity-90">
                   <Phone className="w-5 h-5 mr-3" />
-                  <span>+91 98765 43210</span>
+                  <span>+91 99531 93039</span>
                 </div>
                 <div className="flex items-center justify-center md:justify-end opacity-90">
                   <Mail className="w-5 h-5 mr-3" />
@@ -72,7 +72,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center justify-center md:justify-end opacity-90">
                   <MapPin className="w-5 h-5 mr-3" />
-                  <span>Delhi, India</span>
+                  <span>VP Block Pitampura, Delhi 110034</span>
                 </div>
               </div>
             </div>
