@@ -53,14 +53,23 @@ const About = () => {
             </div>
             
             <div className="relative">
-              <div className="bg-gradient-spiritual rounded-2xl p-8 text-center shadow-spiritual">
-                <h3 className="text-2xl font-bold text-primary-foreground mb-4">
-                  Years of Experience
-                </h3>
-                <div className="text-5xl font-bold text-primary-foreground mb-2">15+</div>
-                <p className="text-primary-foreground/80">
-                  Dedicated to spreading joy through devotional music
-                </p>
+              <div className="relative overflow-hidden rounded-2xl shadow-spiritual">
+                <img
+                  src="/lovable-uploads/b91312c7-37fa-4e34-84b4-ea33c4a5baef.png"
+                  alt="Vaibhav Arora performing bhajan at a spiritual gathering"
+                  className="w-full h-auto object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <div className="bg-primary-foreground/90 backdrop-blur-sm rounded-lg p-4 text-center">
+                    <h3 className="text-xl font-bold text-primary mb-2">
+                      Vaibhav Arora
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      15+ Years of Devotional Music Excellence
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

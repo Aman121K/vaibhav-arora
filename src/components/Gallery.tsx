@@ -7,25 +7,25 @@ import { Play, Calendar, MapPin, Users } from "lucide-react";
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState<'videos' | 'images' | 'events'>('videos');
 
-  // Sample YouTube videos - replace with actual video IDs
+  // Vaibhav Arora's actual YouTube videos
   const videos = [
     {
-      id: "dQw4w9WgXcQ",
+      id: "-_WUqSq86Q8",
       title: "Shri Krishna Bhajan - Live Performance",
       description: "Beautiful rendition of classic Krishna bhajans at a temple gathering"
     },
     {
-      id: "9bZkp7q19f0",
-      title: "Ganesh Aarti - Festival Celebration",
+      id: "eZ4OA7lw1WU",
+      title: "Ganesh Aarti - Festival Celebration", 
       description: "Energetic Ganesh aarti performed during Ganesh Chaturthi"
     },
     {
-      id: "kJQP7kiw5Fk",
+      id: "aA1lcOWOmXk",
       title: "Ram Bhajan Medley",
       description: "Soulful Ram bhajans that touch the heart"
     },
     {
-      id: "jNQXAC9IVRw",
+      id: "RYao7_0ozJA",
       title: "Hanuman Chalisa - Devotional",
       description: "Traditional Hanuman Chalisa with tabla accompaniment"
     }
