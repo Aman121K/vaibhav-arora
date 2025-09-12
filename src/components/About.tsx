@@ -38,17 +38,13 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Born into a family with deep spiritual roots, Vaibhav has been immersed in the world of 
-                devotional music from a young age. His journey began with learning classical ragas and 
-                gradually evolved into specialized bhajan singing.
+                Born into a family with deep spiritual roots, Vaibhav has been immersed in devotional music from a young age through the guidance of his mother. Inspired by the legendary Shri Narender Chanchal Ji, who remains his idol, Vaibhav developed a strong devotion to bhakti sangeet and spiritual performances.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Each performance is not just a musical presentation but a spiritual offering, designed to 
-                elevate the consciousness of listeners and create a bridge between the earthly and divine realms.
+                For him, each performance is not just a musical presentation but a spiritual offering—aimed at elevating the consciousness of listeners and creating a bridge between the earthly and divine realms.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Whether it's a intimate home gathering, temple celebration, or large cultural event, 
-                Vaibhav brings the same level of dedication and spiritual authenticity to every performance.
+                Whether it is an intimate home gathering, a temple celebration, or a large cultural event in different cities, Vaibhav brings the same level of dedication, devotion, and authenticity to every performance.
               </p>
             </div>
             

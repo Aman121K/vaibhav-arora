@@ -2,13 +2,14 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Play, Calendar, MapPin, Users } from "lucide-react";
+import { Play, Calendar, MapPin, Users, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState<'videos' | 'images' | 'events'>('videos');
 
-  // Vaibhav Arora's actual YouTube videos
-  const videos = [
+  // Vaibhav Arora's actual YouTube videos (showing first 4)
+  const featuredVideos = [
     {
       id: "-_WUqSq86Q8",
       title: "Shri Krishna Bhajan - Live Performance",
@@ -134,26 +135,36 @@ const Gallery = () => {
 
           {/* Videos Tab */}
           {activeTab === 'videos' && (
-            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-              {videos.map((video, index) => (
-                <Card key={index} className="overflow-hidden shadow-spiritual hover:shadow-warm transition-all duration-300">
-                  <CardContent className="p-0">
-                    <div className="aspect-video bg-muted relative group">
-                      <iframe
-                        src={`https://www.youtube.com/embed/${video.id}`}
-                        title={video.title}
-                        className="w-full h-full"
-                        allowFullScreen
-                        loading="lazy"
-                      />
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-semibold text-foreground mb-2">{video.title}</h3>
-                      <p className="text-muted-foreground leading-relaxed">{video.description}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+            <div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-8">
+                {featuredVideos.map((video, index) => (
+                  <Card key={index} className="overflow-hidden shadow-spiritual hover:shadow-warm transition-all duration-300">
+                    <CardContent className="p-0">
+                      <div className="aspect-video bg-muted relative group">
+                        <iframe
+                          src={`https://www.youtube.com/embed/${video.id}`}
+                          title={video.title}
+                          className="w-full h-full"
+                          allowFullScreen
+                          loading="lazy"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-xl font-semibold text-foreground mb-2">{video.title}</h3>
+                        <p className="text-muted-foreground leading-relaxed">{video.description}</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+              <div className="text-center">
+                <Link to="/videos">
+                  <Button variant="spiritual" size="lg" className="group">
+                    <ExternalLink className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
+                    See All Videos
+                  </Button>
+                </Link>
+              </div>
             </div>
           )}
 
