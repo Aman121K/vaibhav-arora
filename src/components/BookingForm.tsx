@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { CalendarIcon, Phone } from "lucide-react";
+import { CalendarIcon, Phone, MessageCircle } from "lucide-react";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
@@ -28,6 +28,25 @@ const BookingForm = () => {
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
+  };
+
+  const handleQuickWhatsApp = () => {
+    const quickMessage = `🎵 *Quick Connect - Bhajan Booking Inquiry* 🎵
+
+Hello Vaibhav ji! I'm interested in booking a bhajan performance. Could we discuss the details?
+
+_Sent from Vaibhav Arora Bhajan Website_`;
+
+    const encodedMessage = encodeURIComponent(quickMessage);
+    const whatsappNumber = "919953193039";
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    
+    window.open(whatsappUrl, '_blank');
+    
+    toast({
+      title: "Connected to WhatsApp!",
+      description: "You can now chat directly with Vaibhav ji for booking details.",
+    });
   };
 
   const handleWhatsAppBooking = async () => {
@@ -113,6 +132,19 @@ _Sent from Vaibhav Arora Bhajan Website_`;
                 <Phone className="w-6 h-6" />
                 WhatsApp Booking Form
               </CardTitle>
+              <div className="mt-4">
+                <Button
+                  variant="outline"
+                  onClick={handleQuickWhatsApp}
+                  className="gap-2 border-spiritual text-spiritual hover:bg-spiritual hover:text-white"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  Quick WhatsApp Connect
+                </Button>
+                <p className="text-sm text-muted-foreground mt-2">
+                  Or fill the form below for detailed booking
+                </p>
+              </div>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
