@@ -170,59 +170,79 @@ const Gallery = () => {
 
           {/* Images Tab */}
           {activeTab === 'images' && (
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {eventImages.map((image, index) => (
-                <Card key={index} className="overflow-hidden shadow-spiritual hover:shadow-warm transition-all duration-300">
-                  <CardContent className="p-0">
-                    <div className="aspect-video relative group">
-                      <img
-                        src={image.src}
-                        alt={image.alt}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    </div>
-                    <div className="p-4">
-                      <h3 className="text-lg font-semibold text-foreground">{image.title}</h3>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+            <div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+                {eventImages.map((image, index) => (
+                  <Card key={index} className="overflow-hidden shadow-spiritual hover:shadow-warm transition-all duration-300">
+                    <CardContent className="p-0">
+                      <div className="aspect-video relative group">
+                        <img
+                          src={image.src}
+                          alt={image.alt}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      </div>
+                      <div className="p-4">
+                        <h3 className="text-lg font-semibold text-foreground">{image.title}</h3>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+              <div className="text-center">
+                <Link to="/images">
+                  <Button variant="spiritual" size="lg" className="group">
+                    <ExternalLink className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
+                    See All Images
+                  </Button>
+                </Link>
+              </div>
             </div>
           )}
 
           {/* Events Tab */}
           {activeTab === 'events' && (
-            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {upcomingEvents.map((event, index) => (
-                <Card key={index} className="shadow-spiritual hover:shadow-warm transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex justify-between items-start mb-4">
-                      <Badge variant="outline" className="text-primary border-primary">
-                        {event.type}
-                      </Badge>
-                      <span className="text-sm text-muted-foreground">
-                        {new Date(event.date).toLocaleDateString('en-IN', { 
-                          day: 'numeric', 
-                          month: 'short',
-                          year: 'numeric'
-                        })}
-                      </span>
-                    </div>
-                    <h3 className="text-xl font-semibold text-foreground mb-3">{event.title}</h3>
-                    <div className="space-y-2 text-muted-foreground">
-                      <div className="flex items-center">
-                        <MapPin className="w-4 h-4 mr-2 text-primary" />
-                        <span>{event.location}</span>
+            <div>
+              <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-8">
+                {upcomingEvents.map((event, index) => (
+                  <Card key={index} className="shadow-spiritual hover:shadow-warm transition-all duration-300">
+                    <CardContent className="p-6">
+                      <div className="flex justify-between items-start mb-4">
+                        <Badge variant="outline" className="text-primary border-primary">
+                          {event.type}
+                        </Badge>
+                        <span className="text-sm text-muted-foreground">
+                          {new Date(event.date).toLocaleDateString('en-IN', { 
+                            day: 'numeric', 
+                            month: 'short',
+                            year: 'numeric'
+                          })}
+                        </span>
                       </div>
-                      <div className="flex items-center">
-                        <Calendar className="w-4 h-4 mr-2 text-primary" />
-                        <span>{event.time}</span>
+                      <h3 className="text-xl font-semibold text-foreground mb-3">{event.title}</h3>
+                      <div className="space-y-2 text-muted-foreground">
+                        <div className="flex items-center">
+                          <MapPin className="w-4 h-4 mr-2 text-primary" />
+                          <span>{event.location}</span>
+                        </div>
+                        <div className="flex items-center">
+                          <Calendar className="w-4 h-4 mr-2 text-primary" />
+                          <span>{event.time}</span>
+                        </div>
                       </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+              <div className="text-center">
+                <Link to="/events">
+                  <Button variant="spiritual" size="lg" className="group">
+                    <ExternalLink className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
+                    See All Events
+                  </Button>
+                </Link>
+              </div>
             </div>
           )}
         </div>
