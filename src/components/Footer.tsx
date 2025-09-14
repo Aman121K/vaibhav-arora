@@ -80,7 +80,7 @@ const Footer = () => {
 
           <div className="border-t border-primary-foreground/20 pt-8 text-center">
             <p className="opacity-80">
-              © 2024 Vaibhav Arora - Bhajan Singer. All rights reserved. | 
+              © 2025 Vaibhav Arora - Bhajan Singer. All rights reserved. | 
               Made with ❤️ for spreading divine music
             </p>
           </div>

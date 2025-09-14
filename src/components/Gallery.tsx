@@ -32,7 +32,7 @@ const Gallery = () => {
     }
   ];
 
-  // Sample event images
+  // Event images with all the new WhatsApp images
   const eventImages = [
     {
       src: "/lovable-uploads/b91312c7-37fa-4e34-84b4-ea33c4a5baef.png",
@@ -40,17 +40,42 @@ const Gallery = () => {
       title: "Temple Gathering Performance"
     },
     {
-      src: "/placeholder.svg",
-      alt: "Bhajan performance at wedding",
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.20.33.jpeg",
+      alt: "Bhajan performance at spiritual gathering",
+      title: "Spiritual Gathering Performance"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.20.34.jpeg",
+      alt: "Devotional singing session",
+      title: "Devotional Singing Session"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.15.jpeg",
+      alt: "Temple bhajan performance",
+      title: "Temple Bhajan Performance"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.16.jpeg",
+      alt: "Festival celebration performance",
+      title: "Festival Celebration"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.19.jpeg",
+      alt: "Community gathering bhajan",
+      title: "Community Gathering"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.20.jpeg",
+      alt: "Wedding ceremony bhajan",
       title: "Wedding Ceremony Bhajans"
     },
     {
-      src: "/placeholder.svg", 
-      alt: "Festival celebration",
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.23.jpeg",
+      alt: "Diwali festival celebration",
       title: "Diwali Festival Celebration"
     },
     {
-      src: "/placeholder.svg",
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.24.jpeg",
       alt: "Home gathering performance",
       title: "Intimate Home Gathering"
     }
@@ -59,28 +84,28 @@ const Gallery = () => {
   // Sample upcoming events
   const upcomingEvents = [
     {
-      date: "2024-10-15",
+      date: "2025-10-15",
       title: "Karva Chauth Special Bhajan Evening",
       location: "Community Hall, Pitampura",
       time: "6:00 PM - 8:00 PM",
       type: "Festival"
     },
     {
-      date: "2024-10-25",
+      date: "2025-10-25",
       title: "Diwali Celebration - Lakshmi Aarti",
       location: "Shri Ram Mandir, Delhi",
       time: "7:00 PM - 9:00 PM", 
       type: "Festival"
     },
     {
-      date: "2024-11-05",
+      date: "2025-11-05",
       title: "Private Wedding Ceremony",
       location: "Banquet Hall, CP",
       time: "5:00 PM - 7:00 PM",
       type: "Wedding"
     },
     {
-      date: "2024-11-12",
+      date: "2025-11-12",
       title: "Govardhan Puja Bhajan Sandhya",
       location: "ISKCON Temple, East of Kailash",
       time: "6:30 PM - 8:30 PM",

@@ -16,7 +16,7 @@ const Navigation = () => {
     { name: "Videos", href: "/videos", icon: Video },
     { name: "Events", href: "/events", icon: Calendar },
     { name: "Images", href: "/images", icon: Image },
-    { name: "Location", href: "/#map", icon: MapPin },
+    { name: "Location", href: "/#location", icon: MapPin },
   ];
 
   const scrollToSection = (sectionId: string) => {

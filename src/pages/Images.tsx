@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Images = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // All event images
+  // All event images with the new WhatsApp images
   const allImages = [
     {
       src: "/lovable-uploads/b91312c7-37fa-4e34-84b4-ea33c4a5baef.png",
@@ -16,46 +16,208 @@ const Images = () => {
       description: "Soulful bhajan performance at a temple gathering with devotees"
     },
     {
-      src: "/placeholder.svg",
-      alt: "Bhajan performance at wedding",
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.20.33.jpeg",
+      alt: "Bhajan performance at spiritual gathering",
+      title: "Spiritual Gathering Performance",
+      description: "Divine bhajan performance creating a sacred atmosphere"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.20.34.jpeg",
+      alt: "Devotional singing session",
+      title: "Devotional Singing Session",
+      description: "Heart-touching devotional songs in an intimate setting"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.15.jpeg",
+      alt: "Temple bhajan performance",
+      title: "Temple Bhajan Performance",
+      description: "Traditional bhajan performance at a sacred temple"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.15 (1).jpeg",
+      alt: "Temple gathering moment",
+      title: "Temple Gathering Moment",
+      description: "Capturing the divine energy during temple gathering"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.16.jpeg",
+      alt: "Festival celebration performance",
+      title: "Festival Celebration",
+      description: "Joyous festival celebration with devotional music"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.16 (1).jpeg",
+      alt: "Festival gathering",
+      title: "Festival Gathering",
+      description: "Community coming together for festival celebration"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.19.jpeg",
+      alt: "Community gathering bhajan",
+      title: "Community Gathering",
+      description: "Bringing community together through devotional music"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.19 (1).jpeg",
+      alt: "Community bhajan session",
+      title: "Community Bhajan Session",
+      description: "Intimate community bhajan session"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.20.jpeg",
+      alt: "Wedding ceremony bhajan",
       title: "Wedding Ceremony Bhajans",
       description: "Sacred wedding ceremony with traditional bhajan singing"
     },
     {
-      src: "/placeholder.svg", 
-      alt: "Festival celebration",
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.20 (1).jpeg",
+      alt: "Wedding celebration",
+      title: "Wedding Celebration",
+      description: "Blessed wedding celebration with devotional music"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.20 (2).jpeg",
+      alt: "Wedding ceremony moment",
+      title: "Wedding Ceremony Moment",
+      description: "Sacred moment during wedding ceremony"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.23.jpeg",
+      alt: "Diwali festival celebration",
       title: "Diwali Festival Celebration",
       description: "Grand Diwali celebration with Lakshmi aarti and bhajans"
     },
     {
-      src: "/placeholder.svg",
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.23 (1).jpeg",
+      alt: "Diwali gathering",
+      title: "Diwali Gathering",
+      description: "Festive Diwali gathering with family and friends"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.24.jpeg",
       alt: "Home gathering performance",
       title: "Intimate Home Gathering",
       description: "Personal bhajan session at a family home gathering"
     },
     {
-      src: "/placeholder.svg",
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.24 (1).jpeg",
+      alt: "Home bhajan session",
+      title: "Home Bhajan Session",
+      description: "Intimate bhajan session in a home setting"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.27.jpeg",
       alt: "Ganesh Chaturthi celebration",
       title: "Ganesh Chaturthi Festival",
       description: "Energetic Ganesh aarti during the festival celebration"
     },
     {
-      src: "/placeholder.svg",
-      alt: "Temple kirtan session",
-      title: "Morning Temple Kirtan",
-      description: "Early morning kirtan session at ISKCON temple"
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.27 (1).jpeg",
+      alt: "Ganesh festival moment",
+      title: "Ganesh Festival Moment",
+      description: "Blessed moment during Ganesh Chaturthi celebration"
     },
     {
-      src: "/placeholder.svg",
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.28.jpeg",
+      alt: "Temple kirtan session",
+      title: "Morning Temple Kirtan",
+      description: "Early morning kirtan session at temple"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.28 (1).jpeg",
+      alt: "Temple gathering",
+      title: "Temple Gathering",
+      description: "Devotees gathered for temple kirtan"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.28 (2).jpeg",
+      alt: "Temple ceremony",
+      title: "Temple Ceremony",
+      description: "Sacred temple ceremony with devotional music"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.29.jpeg",
       alt: "Cultural program performance",
       title: "Cultural Program Event",
       description: "Corporate cultural evening with bhajan performances"
     },
     {
-      src: "/placeholder.svg",
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.29 (1).jpeg",
+      alt: "Cultural evening",
+      title: "Cultural Evening",
+      description: "Cultural evening with traditional performances"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.30.jpeg",
       alt: "Satyanarayan katha ceremony",
       title: "Satyanarayan Katha",
       description: "Traditional katha ceremony with devotional singing"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.30 (1).jpeg",
+      alt: "Katha ceremony",
+      title: "Katha Ceremony",
+      description: "Sacred katha ceremony with devotees"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.30 (2).jpeg",
+      alt: "Religious ceremony",
+      title: "Religious Ceremony",
+      description: "Traditional religious ceremony with bhajan singing"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.31.jpeg",
+      alt: "Spiritual gathering",
+      title: "Spiritual Gathering",
+      description: "Community spiritual gathering with devotional music"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.31 (1).jpeg",
+      alt: "Devotional gathering",
+      title: "Devotional Gathering",
+      description: "Heart-touching devotional gathering"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.31 (2).jpeg",
+      alt: "Sacred moment",
+      title: "Sacred Moment",
+      description: "Capturing a sacred moment during spiritual gathering"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.32.jpeg",
+      alt: "Temple performance",
+      title: "Temple Performance",
+      description: "Divine performance at temple gathering"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.32 (1).jpeg",
+      alt: "Temple celebration",
+      title: "Temple Celebration",
+      description: "Joyous celebration at temple with devotional music"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.33.jpeg",
+      alt: "Festival performance",
+      title: "Festival Performance",
+      description: "Energetic festival performance with traditional music"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.33 (1).jpeg",
+      alt: "Festival gathering",
+      title: "Festival Gathering",
+      description: "Community festival gathering with bhajan singing"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.33 (2).jpeg",
+      alt: "Celebration moment",
+      title: "Celebration Moment",
+      description: "Joyous celebration moment with devotional music"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.34.jpeg",
+      alt: "Spiritual ceremony",
+      title: "Spiritual Ceremony",
+      description: "Sacred spiritual ceremony with traditional bhajans"
     }
   ];
 

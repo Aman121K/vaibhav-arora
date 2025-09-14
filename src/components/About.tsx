@@ -62,7 +62,7 @@ const About = () => {
                       Vaibhav Arora
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      15+ Years of Devotional Music Excellence
+                      5 Years of Devotional Music Excellence
                     </p>
                   </div>
                 </div>
