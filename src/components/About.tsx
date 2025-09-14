@@ -1,57 +1,63 @@
 import { Card, CardContent } from "@/components/ui/card";
+import heroImage from "@/assets/hero-bhajan.jpg";
 
 const About = () => {
   const qualities = [
     {
       title: "Authentic Tradition",
-      description: "Rooted in classical Indian bhajan tradition with years of dedicated practice and learning"
+      description: "Rooted in classical Indian music traditions, bringing authentic devotional experiences to every performance."
     },
     {
-      title: "Spiritual Connection", 
-      description: "Creating an atmosphere of devotion and peace through heartfelt musical expressions"
+      title: "Spiritual Connection",
+      description: "Creates deep spiritual connections through soulful renditions that touch hearts and uplift souls."
     },
     {
       title: "Versatile Repertoire",
-      description: "Wide range of bhajans from different traditions, suitable for all occasions and audiences"
+      description: "Extensive collection of bhajans, kirtans, and devotional songs suitable for all occasions and audiences."
     },
     {
       title: "Professional Excellence",
-      description: "Committed to delivering memorable performances with punctuality and dedication"
+      description: "5+ years of experience with commitment to quality, punctuality, and creating memorable musical experiences."
     }
   ];
 
   return (
-    <section id="about" className="py-20 bg-background">
+    <section id="about" className="py-20 bg-gradient-warm">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               About Vaibhav Arora
             </h2>
-            <div className="w-16 h-1 bg-gradient-spiritual mx-auto mb-8"></div>
+            <div className="w-24 h-1 bg-gradient-spiritual mx-auto mb-6"></div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              With deep reverence for the divine and years of musical training, Vaibhav Arora brings 
-              authentic bhajan singing that creates a sacred atmosphere of devotion and peace.
+              A passionate bhajan singer dedicated to spreading divine music and spiritual bliss through authentic performances that connect hearts to the divine.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="space-y-6">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Born into a family with deep spiritual roots, Vaibhav has been immersed in devotional music from a young age through the guidance of his mother. Inspired by the legendary Shri Narender Chanchal Ji, who remains his idol, Vaibhav developed a strong devotion to bhakti sangeet and spiritual performances.
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <h3 className="text-3xl font-bold text-foreground mb-6">
+                Journey of Devotion
+              </h3>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                With over 5 years of experience in devotional music, Vaibhav Arora has dedicated his life to the art of bhajan singing. 
+                His journey began with a deep spiritual calling and has evolved into a commitment to sharing divine melodies that touch souls.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Vaibhav specializes in traditional bhajans, kirtans, and devotional songs, bringing authentic spiritual experiences 
+                to temples, home gatherings, cultural events, and special occasions across India.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                For him, each performance is not just a musical presentation but a spiritual offering—aimed at elevating the consciousness of listeners and creating a bridge between the earthly and divine realms.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Whether it is an intimate home gathering, a temple celebration, or a large cultural event in different cities, Vaibhav brings the same level of dedication, devotion, and authenticity to every performance.
+                His performances are known for their soulful renditions, creating an atmosphere of peace, devotion, and spiritual connection 
+                that resonates with audiences of all ages and backgrounds.
               </p>
             </div>
             
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl shadow-spiritual">
                 <img
-                  src="/lovable-uploads/b91312c7-37fa-4e34-84b4-ea33c4a5baef.png"
+                  src={heroImage}
                   alt="Vaibhav Arora performing bhajan at a spiritual gathering"
                   className="w-full h-auto object-cover"
                 />

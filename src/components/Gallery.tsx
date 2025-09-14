@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Play, Calendar, MapPin, Users, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroImage from "@/assets/hero-bhajan.jpg";
 
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState<'videos' | 'images' | 'events'>('videos');
@@ -35,49 +36,179 @@ const Gallery = () => {
   // Event images with all the new WhatsApp images
   const eventImages = [
     {
-      src: "/lovable-uploads/b91312c7-37fa-4e34-84b4-ea33c4a5baef.png",
+      src: heroImage,
       alt: "Vaibhav Arora performing at a spiritual gathering",
       title: "Temple Gathering Performance"
     },
     {
       src: "/src/assets/WhatsApp Image 2025-09-12 at 15.20.33.jpeg",
       alt: "Bhajan performance at spiritual gathering",
-      title: "Spiritual Gathering Performance"
+      title: "Devotional Evening"
     },
     {
       src: "/src/assets/WhatsApp Image 2025-09-12 at 15.20.34.jpeg",
-      alt: "Devotional singing session",
-      title: "Devotional Singing Session"
+      alt: "Spiritual music performance",
+      title: "Sacred Music Session"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.15 (1).jpeg",
+      alt: "Vaibhav Arora singing bhajans",
+      title: "Bhajan Performance"
     },
     {
       src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.15.jpeg",
+      alt: "Devotional singing performance",
+      title: "Spiritual Gathering"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.16 (1).jpeg",
       alt: "Temple bhajan performance",
-      title: "Temple Bhajan Performance"
+      title: "Temple Celebration"
     },
     {
       src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.16.jpeg",
-      alt: "Festival celebration performance",
-      title: "Festival Celebration"
+      alt: "Sacred music evening",
+      title: "Divine Music Night"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.19 (1).jpeg",
+      alt: "Vaibhav performing devotional songs",
+      title: "Devotional Performance"
     },
     {
       src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.19.jpeg",
-      alt: "Community gathering bhajan",
-      title: "Community Gathering"
+      alt: "Spiritual music gathering",
+      title: "Sacred Gathering"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.20 (1).jpeg",
+      alt: "Bhajan singer performance",
+      title: "Musical Devotion"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.20 (2).jpeg",
+      alt: "Temple music performance",
+      title: "Temple Music"
     },
     {
       src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.20.jpeg",
-      alt: "Wedding ceremony bhajan",
-      title: "Wedding Ceremony Bhajans"
+      alt: "Devotional music evening",
+      title: "Evening Bhajans"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.23 (1).jpeg",
+      alt: "Spiritual singing performance",
+      title: "Sacred Singing"
     },
     {
       src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.23.jpeg",
-      alt: "Diwali festival celebration",
-      title: "Diwali Festival Celebration"
+      alt: "Vaibhav Arora bhajan performance",
+      title: "Soulful Performance"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.24 (1).jpeg",
+      alt: "Devotional music session",
+      title: "Music Session"
     },
     {
       src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.24.jpeg",
-      alt: "Home gathering performance",
-      title: "Intimate Home Gathering"
+      alt: "Spiritual gathering performance",
+      title: "Gathering Performance"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.27 (1).jpeg",
+      alt: "Temple bhajan evening",
+      title: "Temple Evening"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.27.jpeg",
+      alt: "Sacred music performance",
+      title: "Sacred Performance"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.28 (1).jpeg",
+      alt: "Devotional singing gathering",
+      title: "Devotional Gathering"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.28 (2).jpeg",
+      alt: "Bhajan performance evening",
+      title: "Performance Evening"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.28.jpeg",
+      alt: "Spiritual music session",
+      title: "Music Session"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.29 (1).jpeg",
+      alt: "Temple music gathering",
+      title: "Temple Music"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.29.jpeg",
+      alt: "Vaibhav Arora devotional performance",
+      title: "Devotional Performance"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.30 (1).jpeg",
+      alt: "Sacred singing evening",
+      title: "Sacred Evening"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.30 (2).jpeg",
+      alt: "Spiritual music performance",
+      title: "Spiritual Performance"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.30.jpeg",
+      alt: "Bhajan singing gathering",
+      title: "Bhajan Gathering"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.31 (1).jpeg",
+      alt: "Devotional music evening",
+      title: "Devotional Evening"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.31 (2).jpeg",
+      alt: "Temple gathering performance",
+      title: "Temple Gathering"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.31.jpeg",
+      alt: "Sacred music session",
+      title: "Sacred Session"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.32 (1).jpeg",
+      alt: "Spiritual singing performance",
+      title: "Spiritual Singing"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.32.jpeg",
+      alt: "Vaibhav Arora bhajan evening",
+      title: "Bhajan Evening"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.33 (1).jpeg",
+      alt: "Devotional music gathering",
+      title: "Music Gathering"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.33 (2).jpeg",
+      alt: "Temple music performance",
+      title: "Temple Performance"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.33.jpeg",
+      alt: "Sacred singing session",
+      title: "Sacred Singing"
+    },
+    {
+      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.34.jpeg",
+      alt: "Spiritual gathering performance",
+      title: "Spiritual Gathering"
     }
   ];
 
