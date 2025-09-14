@@ -668,7 +668,7 @@ const Events = () => {
       </div>
 
       {/* Regular Events Section */}
-      <div className="container mx-auto px-4 py-12 bg-background/50">
+      {/* <div className="container mx-auto px-4 py-12 bg-background/50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
@@ -718,7 +718,7 @@ const Events = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

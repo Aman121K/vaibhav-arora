@@ -17,7 +17,7 @@ const About = () => {
     },
     {
       title: "Professional Excellence",
-      description: "5+ years of experience with commitment to quality, punctuality, and creating memorable musical experiences."
+      description: "8+ years of experience with commitment to quality, punctuality, and creating memorable musical experiences."
     }
   ];
 
@@ -41,16 +41,14 @@ const About = () => {
                 Journey of Devotion
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                With over 5 years of experience in devotional music, Vaibhav Arora has dedicated his life to the art of bhajan singing. 
-                His journey began with a deep spiritual calling and has evolved into a commitment to sharing divine melodies that touch souls.
+                With over 8 years of experience in devotional music, <strong>Vaibhav Arora</strong> was introduced to bhajans by his mother, who often sang during his childhood. 
+                Deeply inspired by his idol, <strong>Shri Narendra Chanchal Ji</strong>, he developed a profound passion for devotional music, which has grown into a lifelong commitment to sharing divine melodies that uplift and touch souls.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Vaibhav specializes in traditional bhajans, kirtans, and devotional songs, bringing authentic spiritual experiences 
-                to temples, home gatherings, cultural events, and special occasions across India.
+                He specializes in <strong>traditional bhajans, kirtans, and devotional songs</strong>, delivering authentic spiritual experiences at temples, home gatherings, cultural events, and special occasions across India.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                His performances are known for their soulful renditions, creating an atmosphere of peace, devotion, and spiritual connection 
-                that resonates with audiences of all ages and backgrounds.
+                Renowned for his <strong>soulful renditions</strong>, Vaibhav creates an atmosphere of peace, devotion, and spiritual connection that resonates deeply with audiences of all ages and backgrounds.
               </p>
             </div>
             
@@ -68,7 +66,7 @@ const About = () => {
                       Vaibhav Arora
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      5 Years of Devotional Music Excellence
+                      8 Years of Devotional Music Excellence
                     </p>
                   </div>
                 </div>

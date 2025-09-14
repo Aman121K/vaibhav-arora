@@ -5,10 +5,46 @@ import { X, ChevronLeft, ChevronRight, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-bhajan.jpg";
 
+// Import all images
+import img1 from "@/assets/WhatsApp Image 2025-09-12 at 15.20.33.jpeg";
+import img2 from "@/assets/WhatsApp Image 2025-09-12 at 15.20.34.jpeg";
+import img3 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.15 (1).jpeg";
+import img4 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.15.jpeg";
+import img5 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.16 (1).jpeg";
+import img6 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.16.jpeg";
+import img7 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.19 (1).jpeg";
+import img8 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.19.jpeg";
+import img9 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.20 (1).jpeg";
+import img10 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.20 (2).jpeg";
+import img11 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.20.jpeg";
+import img12 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.23 (1).jpeg";
+import img13 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.23.jpeg";
+import img14 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.24 (1).jpeg";
+import img15 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.24.jpeg";
+import img16 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.27 (1).jpeg";
+import img17 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.27.jpeg";
+import img18 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.28 (1).jpeg";
+import img19 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.28 (2).jpeg";
+import img20 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.28.jpeg";
+import img21 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.29 (1).jpeg";
+import img22 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.29.jpeg";
+import img23 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.30 (1).jpeg";
+import img24 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.30 (2).jpeg";
+import img25 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.30.jpeg";
+import img26 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.31 (1).jpeg";
+import img27 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.31 (2).jpeg";
+import img28 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.31.jpeg";
+import img29 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.32 (1).jpeg";
+import img30 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.32.jpeg";
+import img31 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.33 (1).jpeg";
+import img32 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.33 (2).jpeg";
+import img33 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.33.jpeg";
+import img34 from "@/assets/WhatsApp Image 2025-09-12 at 15.21.34.jpeg";
+
 const Images = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
-  // All event images with the new WhatsApp images
+  // All event images with imported images
   const allImages = [
     {
       src: heroImage,
@@ -17,205 +53,205 @@ const Images = () => {
       description: "Soulful bhajan performance at a temple gathering with devotees"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.20.33.jpeg",
+      src: img1,
       alt: "Bhajan performance at spiritual gathering",
       title: "Devotional Evening",
       description: "Creating spiritual atmosphere through devotional music"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.20.34.jpeg",
+      src: img2,
       alt: "Spiritual music performance",
       title: "Sacred Music Session",
       description: "Deep spiritual connection through sacred melodies"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.15 (1).jpeg",
+      src: img3,
       alt: "Vaibhav Arora singing bhajans",
       title: "Bhajan Performance",
       description: "Authentic bhajan rendition touching hearts"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.15.jpeg",
+      src: img4,
       alt: "Devotional singing performance",
       title: "Spiritual Gathering",
       description: "Uniting devotees through divine music"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.16 (1).jpeg",
+      src: img5,
       alt: "Temple bhajan performance",
       title: "Temple Celebration",
       description: "Sacred music enhancing temple atmosphere"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.16.jpeg",
+      src: img6,
       alt: "Sacred music evening",
       title: "Divine Music Night",
       description: "Evening of spiritual music and devotion"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.19 (1).jpeg",
+      src: img7,
       alt: "Vaibhav performing devotional songs",
       title: "Devotional Performance",
       description: "Heartfelt devotional singing performance"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.19.jpeg",
+      src: img8,
       alt: "Spiritual music gathering",
       title: "Sacred Gathering",
       description: "Community coming together for spiritual music"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.20 (1).jpeg",
+      src: img9,
       alt: "Bhajan singer performance",
       title: "Musical Devotion",
       description: "Expressing devotion through musical excellence"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.20 (2).jpeg",
+      src: img10,
       alt: "Temple music performance",
       title: "Temple Music",
       description: "Sacred music resonating in temple halls"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.20.jpeg",
+      src: img11,
       alt: "Devotional music evening",
       title: "Evening Bhajans",
       description: "Peaceful evening filled with devotional melodies"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.23 (1).jpeg",
+      src: img12,
       alt: "Spiritual singing performance",
       title: "Sacred Singing",
       description: "Pure spiritual singing touching the soul"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.23.jpeg",
+      src: img13,
       alt: "Vaibhav Arora bhajan performance",
       title: "Soulful Performance",
       description: "Deeply moving bhajan performance"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.24 (1).jpeg",
+      src: img14,
       alt: "Devotional music session",
       title: "Music Session",
       description: "Intimate devotional music session"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.24.jpeg",
+      src: img15,
       alt: "Spiritual gathering performance",
       title: "Gathering Performance",
       description: "Performance at spiritual community gathering"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.27 (1).jpeg",
+      src: img16,
       alt: "Temple bhajan evening",
       title: "Temple Evening",
       description: "Sacred evening at the temple"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.27.jpeg",
+      src: img17,
       alt: "Sacred music performance",
       title: "Sacred Performance",
       description: "Performance filled with sacred energy"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.28 (1).jpeg",
+      src: img18,
       alt: "Devotional singing gathering",
       title: "Devotional Gathering",
       description: "Community gathering for devotional music"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.28 (2).jpeg",
+      src: img19,
       alt: "Bhajan performance evening",
       title: "Performance Evening",
       description: "Evening dedicated to bhajan performances"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.28.jpeg",
+      src: img20,
       alt: "Spiritual music session",
       title: "Music Session",
       description: "Focused spiritual music session"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.29 (1).jpeg",
+      src: img21,
       alt: "Temple music gathering",
       title: "Temple Music",
       description: "Musical gathering at the temple"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.29.jpeg",
+      src: img22,
       alt: "Vaibhav Arora devotional performance",
       title: "Devotional Performance",
       description: "Heartfelt devotional music performance"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.30 (1).jpeg",
+      src: img23,
       alt: "Sacred singing evening",
       title: "Sacred Evening",
       description: "Evening of sacred singing and devotion"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.30 (2).jpeg",
+      src: img24,
       alt: "Spiritual music performance",
       title: "Spiritual Performance",
       description: "Performance that elevates the spirit"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.30.jpeg",
+      src: img25,
       alt: "Bhajan singing gathering",
       title: "Bhajan Gathering",
       description: "Community gathering for bhajan singing"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.31 (1).jpeg",
+      src: img26,
       alt: "Devotional music evening",
       title: "Devotional Evening",
       description: "Evening filled with devotional music"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.31 (2).jpeg",
+      src: img27,
       alt: "Temple gathering performance",
       title: "Temple Gathering",
       description: "Performance at temple gathering"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.31.jpeg",
+      src: img28,
       alt: "Sacred music session",
       title: "Sacred Session",
       description: "Session dedicated to sacred music"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.32 (1).jpeg",
+      src: img29,
       alt: "Spiritual singing performance",
       title: "Spiritual Singing",
       description: "Performance of spiritual singing"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.32.jpeg",
+      src: img30,
       alt: "Vaibhav Arora bhajan evening",
       title: "Bhajan Evening",
       description: "Evening dedicated to bhajan music"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.33 (1).jpeg",
+      src: img31,
       alt: "Devotional music gathering",
       title: "Music Gathering",
       description: "Gathering for devotional music"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.33 (2).jpeg",
+      src: img32,
       alt: "Temple music performance",
       title: "Temple Performance",
       description: "Performance at the temple"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.33.jpeg",
+      src: img33,
       alt: "Sacred singing session",
       title: "Sacred Singing",
       description: "Session of sacred singing"
     },
     {
-      src: "/src/assets/WhatsApp Image 2025-09-12 at 15.21.34.jpeg",
+      src: img34,
       alt: "Spiritual gathering performance",
       title: "Spiritual Gathering",
       description: "Performance at spiritual gathering"
